@@ -1,0 +1,6 @@
+framework module YxtRtcKit {
+  umbrella header "YxtRtcKit.h"
+
+  export *
+  module * { export * }
+}

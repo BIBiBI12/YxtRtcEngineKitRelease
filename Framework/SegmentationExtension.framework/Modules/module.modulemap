@@ -1,0 +1,6 @@
+framework module SegmentationExtension {
+  umbrella header "SegmentationExtension.h"
+
+  export *
+  module * { export * }
+}
