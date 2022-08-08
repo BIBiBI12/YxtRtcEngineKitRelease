@@ -168,6 +168,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// 恢复录制
 - (void)resumeRecord;
 
+/// 取消录制
+- (void)cancelRecord;
+
 #pragma mark -- Other
 /// 获取skd版本
 + (NSString *)getSdkVersion;

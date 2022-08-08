@@ -97,6 +97,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)onStatistics:(YxtRtcStatistics *)statistics;
 
 #pragma mark -- 录制状态
+/// 视频录制状态变化
 - (void)onRecordState:(YxtRecordState)recordState;
 
 @end

@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>.DS_Store</key>
+		<data>
+		+15evddoFCrG8+BmLyDN0/gW12I=
+		</data>
 		<key>Headers/UIDevice+RTCDevice.h</key>
 		<data>
 		SlLO8A4CHAbrlIhqpsWvDFa5Hdg=
@@ -22,7 +26,7 @@
 		</data>
 		<key>Headers/YxtRtcEngine.h</key>
 		<data>
-		iWlVs8myLQUic8CAPkAO9Dy09+I=
+		I7+zVVC42rfJLbVTEldrUIQCH38=
 		</data>
 		<key>Headers/YxtRtcEngineDefines.h</key>
 		<data>
@@ -30,7 +34,7 @@
 		</data>
 		<key>Headers/YxtRtcEngineDelegate.h</key>
 		<data>
-		wAkSttEg3DrFeBpMIfNnxOwr5bw=
+		3Ew6tosdKyyUdVjBgDWvbe+liXM=
 		</data>
 		<key>Headers/YxtRtcKit.h</key>
 		<data>
@@ -111,11 +115,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			iWlVs8myLQUic8CAPkAO9Dy09+I=
+			I7+zVVC42rfJLbVTEldrUIQCH38=
 			</data>
 			<key>hash2</key>
 			<data>
-			1Qau5H7L5jqS1UYkUzbNMqAkQ2h5TnLIz/LeGjVF240=
+			NWm6eQPTmGeJ4C+SD1YnaY3N4DwqfT9YuDRKQGTntBA=
 			</data>
 		</dict>
 		<key>Headers/YxtRtcEngineDefines.h</key>
@@ -133,11 +137,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wAkSttEg3DrFeBpMIfNnxOwr5bw=
+			3Ew6tosdKyyUdVjBgDWvbe+liXM=
 			</data>
 			<key>hash2</key>
 			<data>
-			lmFnc1PLT+tPvRkz7qwS72jSwIkYa+RO19J0WvqeVuU=
+			d2NUHcMv118x2UQGgqSssqsQQ2kL678WQX1+8yejhvY=
 			</data>
 		</dict>
 		<key>Headers/YxtRtcKit.h</key>
