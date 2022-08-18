@@ -16,6 +16,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/// <#Description#>
 @interface YxtRtcEngine : NSObject
 
 #pragma mark  Core
@@ -170,6 +171,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 取消录制
 - (void)cancelRecord;
+
+#pragma mark -- Asr
+/// 开启语音识别
+/// @param asrResultType  识别模式
+- (void)startAsr:(YxtAsrResultType)asrResultType;
+
+/// 关闭语音识别
+- (void)stopAsr;
 
 #pragma mark -- Other
 /// 获取skd版本
