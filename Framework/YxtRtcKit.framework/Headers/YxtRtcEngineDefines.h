@@ -102,6 +102,7 @@ typedef NS_ENUM(NSInteger, YxtErrorCode) {
     YxtErrSubscriberFail = -3304,
     YxtErrSwitchRoleFail = -3305,
     YxtErrRecordFail = -3306,
+    YxtErrControlAsrFail = -3307,
 };
 
 typedef NS_ENUM(NSUInteger, YxtStreamPublishState ) {
@@ -171,6 +172,14 @@ typedef enum {
     // 自定义背景图的虚化程度为低。用户差不多能看清背景。
     YxtBlurLow = 2,
 } YxtBlurDegree;
+
+
+typedef enum {
+    // 只要最后识别结果，省略中间过程
+    YxtOnlyResult = 0,
+    // 需要中间识别过程
+    YxtIntermediateResult = 1,
+} YxtAsrResultType;
 
 @interface YxtRtcRoomConfig : NSObject
 @property(nonatomic, copy) NSString *appId;

@@ -4,10 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>.DS_Store</key>
-		<data>
-		+15evddoFCrG8+BmLyDN0/gW12I=
-		</data>
 		<key>Headers/UIDevice+RTCDevice.h</key>
 		<data>
 		SlLO8A4CHAbrlIhqpsWvDFa5Hdg=
@@ -26,15 +22,15 @@
 		</data>
 		<key>Headers/YxtRtcEngine.h</key>
 		<data>
-		I7+zVVC42rfJLbVTEldrUIQCH38=
+		T+YtB+cwtWY9waP7U8YKdPnlqCQ=
 		</data>
 		<key>Headers/YxtRtcEngineDefines.h</key>
 		<data>
-		tLVEZ6VnKnwZQf5jwbfFJUigtp8=
+		OkQpzaMRv+gKemfSwzJf1+b5NlE=
 		</data>
 		<key>Headers/YxtRtcEngineDelegate.h</key>
 		<data>
-		3Ew6tosdKyyUdVjBgDWvbe+liXM=
+		El+PpIy+c4gV5B2ylA4xAud1ifY=
 		</data>
 		<key>Headers/YxtRtcKit.h</key>
 		<data>
@@ -58,7 +54,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		YIdnixQgyrDaVnPNfxaQJt8bM5s=
+		PRD8emSjUV2ixsowAZASO5XYOIc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -115,33 +111,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			I7+zVVC42rfJLbVTEldrUIQCH38=
+			T+YtB+cwtWY9waP7U8YKdPnlqCQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			NWm6eQPTmGeJ4C+SD1YnaY3N4DwqfT9YuDRKQGTntBA=
+			5E3163foySxlv+iqwxFDc/jBIO1AF91yMnGWgFB3Mm4=
 			</data>
 		</dict>
 		<key>Headers/YxtRtcEngineDefines.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			tLVEZ6VnKnwZQf5jwbfFJUigtp8=
+			OkQpzaMRv+gKemfSwzJf1+b5NlE=
 			</data>
 			<key>hash2</key>
 			<data>
-			9Kplb3Gw2IPzoloI0xTP2LyR5NnNNZEfIrIhPSoHMgU=
+			2MSmJEHBQbXaoPuPjcopXHribPxlL3m5blLVmrmHIWM=
 			</data>
 		</dict>
 		<key>Headers/YxtRtcEngineDelegate.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3Ew6tosdKyyUdVjBgDWvbe+liXM=
+			El+PpIy+c4gV5B2ylA4xAud1ifY=
 			</data>
 			<key>hash2</key>
 			<data>
-			d2NUHcMv118x2UQGgqSssqsQQ2kL678WQX1+8yejhvY=
+			5cNMbOdu9X//DUaqO5BxFJzxJT+x0oAP9qymdwOO7nI=
 			</data>
 		</dict>
 		<key>Headers/YxtRtcKit.h</key>

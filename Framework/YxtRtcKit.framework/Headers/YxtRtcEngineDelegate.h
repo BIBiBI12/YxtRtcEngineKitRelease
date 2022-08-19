@@ -100,6 +100,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// 视频录制状态变化
 - (void)onRecordState:(YxtRecordState)recordState;
 
+#pragma mark -- 语音识别
+- (void)onAsrResult:(NSDictionary *)asrResult;
+
 @end
 
 NS_ASSUME_NONNULL_END
