@@ -22,11 +22,11 @@ Pod::Spec.new do |s|
        ss.libraries = "c++"
   end
 
-  s.subspec 'SegmentationExtension' do |ss|
-      ss.ios.vendored_framework   = 'Framework/SegmentationExtension.framework'
-      ss.dependency 'MLKitSegmentationSelfie', '~> 1.0.0-beta8'
+  # s.subspec 'SegmentationExtension' do |ss|
+  #     ss.ios.vendored_framework   = 'Framework/SegmentationExtension.framework'
+  #     ss.dependency 'MLKitSegmentationSelfie', '~> 1.0.0-beta8'
 
-  end
+  # end
 
 
 
