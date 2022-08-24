@@ -136,7 +136,7 @@ typedef NS_ENUM(NSInteger, YxtVideoRotation) {
     YxtVideoRotation_0 = 0,
     YxtVideoRotation_90 = 90,
     YxtVideoRotation_180 = 180,
-    YxtCVideoRotation_270 = 270,
+    YxtVideoRotation_270 = 270,
 };
 
 /**重力感应开关*/

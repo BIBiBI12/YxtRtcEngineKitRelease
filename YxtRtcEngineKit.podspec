@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name = "YxtRtcEngineKit"
-  s.version = "1.0.26"
+  s.version = "1.0.27"
   s.summary = "音视频SDK"
   s.license = {"type"=>"MIT", "file"=>"LICENSE"}
   s.authors = {"YxtRtcEngineKit"=>"me_zqx@163.com"}
@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   s.source           = { :git => 'https://e.coding.net/me_zqx/yunxuetang/YxtRtcEngineRelease.git', :tag => "#{s.version}" }
-  s.ios.deployment_target    = '10.0'
+  s.ios.deployment_target    = '9.0'
   s.default_subspec = 'Core'
 
   s.subspec 'Core' do |ss|
