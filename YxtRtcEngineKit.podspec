@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'SegmentationExtension' do |ss|
       ss.ios.vendored_framework   = 'Framework/SegmentationExtension.framework'
-      ss.dependency 'GoogleMLKit/SegmentationSelfie', '~> 1.0.0-beta8'
+      ss.dependency 'MLKitSegmentationSelfie', '~> 1.0.0-beta8'
 
   end
 
