@@ -35,6 +35,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param elapseSinceLastState 两次状态变化时间间隔
 - (void)rtcEngine:(YxtRtcEngine *_Nonnull)engine didVideoPublishStateChange:(NSString *_Nonnull)channel oldState:(YxtStreamPublishState)oldState newState:(YxtStreamPublishState)newState elapseSinceLastState:(NSInteger)elapseSinceLastState;
 
+/// 屏幕录制状态改变 0:未共享  1:共享中
+- (void)rtcEngine:(YxtRtcEngine * _Nonnull)engine localScreenShareStateChangedOfState:(YxtCaptureState)state;
+
 ///  远端用户/主播加入回调
 ///  通信场景下: 远端用户加入
 ///  直播场景下: 主播用户加入，观众不会触发。 如果在加入之前，

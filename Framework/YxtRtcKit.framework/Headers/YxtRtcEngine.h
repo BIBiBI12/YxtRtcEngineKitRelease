@@ -33,6 +33,10 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param config 房间配置
 - (int)joinRoomByConfig:(YxtRtcRoomConfig *)config;
 
+- (int)joinMeetingWithToken:(NSString *)token
+                       name:(NSString *)name
+                 meetingKey:(NSString *)meetingKey;
+
 /// 离开房间
 - (int)leaveRoom;
 
@@ -121,6 +125,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 停止推流
 - (void)stopPublish;
+
+#pragma mark -- ShareScreen
+- (void)startShareScreen;
+
+- (void)stopScreenShare;
 
 #pragma mark -- Channel
 /// 获取查询channel内人员信息

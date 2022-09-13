@@ -121,6 +121,15 @@ typedef NS_ENUM(NSUInteger, YxtRecordState ) {
     YxtRecordStatePause = 2,
 };
 
+typedef NS_ENUM(NSUInteger, YxtCaptureState ) {
+    // 屏幕共享 进程开启
+    YxtLocalVideoStreamCaptureStarted = 0,
+    // 屏幕共享 进程停止
+    YxtLocalVideoStreamCaptureStoped = 1,
+    // 屏幕共享 进程异常
+    YxtLocalVideoStreamCaptureDisconnected = 2,
+};
+
 typedef NS_ENUM(NSUInteger, YxtAudioRoute ) {
     YxtAudioRouteSpeakerphone = 0,
     YxtAudioRouteEarpiece = 1,
