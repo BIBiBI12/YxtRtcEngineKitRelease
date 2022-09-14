@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name = "YxtRtcEngineKit"
-  s.version = "1.0.29"
+  s.version = "1.0.30"
   s.summary = "音视频SDK"
   s.license = {"type"=>"MIT", "file"=>"LICENSE"}
   s.authors = {"YxtRtcEngineKit"=>"me_zqx@163.com"}
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'Core' do |ss|
        ss.ios.vendored_framework   = 'Framework/YxtRtcKit.framework'
-       ss.frameworks = 'UIKit', 'MediaPlayer', 'AVFoundation', 'WebKit', 'AudioToolbox', 'VideoToolbox', 'CoreGraphics', 'GLKit', 'SystemConfiguration','OpenGLES', 'CoreMedia', 'QuartzCore'
+       ss.frameworks = 'UIKit', 'MediaPlayer', 'AVFoundation', 'WebKit', 'AudioToolbox', 'VideoToolbox', 'CoreGraphics', 'GLKit', 'SystemConfiguration','OpenGLES', 'CoreMedia', 'QuartzCore', 'MetalKit'
        ss.libraries = "c++"
   end
 
