@@ -144,6 +144,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// 发送消息给房间单个人员
 - (void)send:(NSString*)message
         to:(NSString*)uid;
+
 #pragma mark -- VirtualBackground
 /// 开启/关闭虚拟背景
 /// 返回值
