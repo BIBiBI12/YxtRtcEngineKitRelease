@@ -8,6 +8,10 @@
 		<data>
 		SlLO8A4CHAbrlIhqpsWvDFa5Hdg=
 		</data>
+		<key>Headers/YxtAsrParam.h</key>
+		<data>
+		JaL+GejxpKOeDl5xaEHx/9HtrrQ=
+		</data>
 		<key>Headers/YxtBeautyManager.h</key>
 		<data>
 		qksnFGKhyx0SQ7CsKfArxeWA3gQ=
@@ -22,7 +26,7 @@
 		</data>
 		<key>Headers/YxtRtcEngine.h</key>
 		<data>
-		Tcl6fqpt9Fjzqy3/wnb9XjEGhik=
+		30SlWw4HtXWfRuCucNaFCOEpSMU=
 		</data>
 		<key>Headers/YxtRtcEngineDefines.h</key>
 		<data>
@@ -74,6 +78,17 @@
 			ZE4/jiTnoUEThS6jiQpwmtsqxgQRtIXCstDeRbRpxBk=
 			</data>
 		</dict>
+		<key>Headers/YxtAsrParam.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JaL+GejxpKOeDl5xaEHx/9HtrrQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			xwVQwRWkEZ9+p14rw2Nw/cu2FNvjNaCGzfmNcqvVRUU=
+			</data>
+		</dict>
 		<key>Headers/YxtBeautyManager.h</key>
 		<dict>
 			<key>hash</key>
@@ -111,11 +126,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Tcl6fqpt9Fjzqy3/wnb9XjEGhik=
+			30SlWw4HtXWfRuCucNaFCOEpSMU=
 			</data>
 			<key>hash2</key>
 			<data>
-			1g/iftcIETHNb4+HIf4zOGSTRc998YL5XiMBcP6AIFY=
+			prcxyrY6dMUdISE2jRVoKgPh9NOntDLh8Clbte8VhVk=
 			</data>
 		</dict>
 		<key>Headers/YxtRtcEngineDefines.h</key>

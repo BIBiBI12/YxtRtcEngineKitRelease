@@ -13,6 +13,7 @@
 #import "YxtBeautyManager.h"
 #import "YxtRtcAVConfig.h"
 #import "YxtVirtualBackgroundSource.h"
+#import "YxtAsrParam.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -127,8 +128,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)stopPublish;
 
 #pragma mark -- ShareScreen
+/// 开启屏幕共享
 - (void)startShareScreen;
 
+/// 结束屏幕共享
 - (void)stopScreenShare;
 
 #pragma mark -- Channel
@@ -186,6 +189,10 @@ NS_ASSUME_NONNULL_BEGIN
 /// 开启语音识别
 /// @param asrResultType  识别模式
 - (void)startAsr:(YxtAsrResultType)asrResultType;
+
+/// 开启语音识别
+/// @asrParam  更细节的控制识别逻辑
+- (void)startAsrWithParam:(YxtAsrParam *)asrParam;
 
 /// 关闭语音识别
 - (void)stopAsr;
