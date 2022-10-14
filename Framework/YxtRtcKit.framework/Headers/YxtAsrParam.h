@@ -24,7 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(nonatomic, assign) BOOL semanticSentenceDetection; //语义断句
 
-@property(nonatomic, assign) BOOL maxSentenceSilence; //200～6000, 静音断句阈值
+@property(nonatomic, assign) int maxSentenceSilence; //200～6000, 静音断句阈值
 
 @property(nonatomic, assign) BOOL enableWords; //词语模式
 
