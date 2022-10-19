@@ -16,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(nonatomic, assign) BOOL tingwu; //听悟多路模式  默认 NO
 
+@property(nonatomic, assign) BOOL seqAutoIncrease; //seq单调递增
+
 @property(nonatomic, assign) BOOL intermediateResult; //中间结果
 
 @property(nonatomic, assign) BOOL punctuationPrediction; //标点
