@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface YxtUserInfo : NSObject
 @property(nonatomic, strong) NSString *uid;
 @property(nonatomic, strong) NSString *name;
+@property(nonatomic, strong) NSString *roomId;
+
 @end
 
 NS_ASSUME_NONNULL_END
