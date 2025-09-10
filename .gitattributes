@@ -1,3 +1,4 @@
 *.a filter=lfs diff=lfs merge=lfs -text
-Framework/SegmentationExtension.framework/SegmentationExtension filter=lfs diff=lfs merge=lfs -text
-Framework/YxtRtcKit.framework/YxtRtcKit filter=lfs diff=lfs merge=lfs -text
+#不使用gitlfs 否则pod的用户，没安装gitlfs 会下载到空framework
+#Framework/SegmentationExtension.framework/SegmentationExtension filter=lfs diff=lfs merge=lfs -text
+#Framework/YxtRtcKit.framework/YxtRtcKit filter=lfs diff=lfs merge=lfs -text
