@@ -16,10 +16,16 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol YxtRtcEngineDelegate <NSObject>
+
 @required
 //错误事件，表示 SDK 抛出的不可恢复的错误，比如进入房间失败或设备开启失败等
 - (void)rtcEngine:(YxtRtcEngine *_Nonnull)engine didOccurError:(YxtErrorCode)errorCode extInfo:(NSDictionary *)extInfo;
 - (void)rtcEngine:(YxtRtcEngine *_Nonnull)engine didOccurWarning:(YxtWarningCode)warningCode extInfo:(NSDictionary *)extInfo;
+/// 是否开启文件日志
+- (BOOL)enableFileLog;
+/// 是否允许上传文件日志
+- (BOOL)enableUploadFileLog;
+
 @optional
 
 - (void)rtcEngine:(YxtRtcEngine *_Nonnull)engine didJoinChannel:(NSString *_Nonnull)channel userInfo:(YxtUserInfo *)userInfo elapsed:(NSInteger)elapsed;
@@ -34,6 +40,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param newState 最新状态
 /// @param elapseSinceLastState 两次状态变化时间间隔
 - (void)rtcEngine:(YxtRtcEngine *_Nonnull)engine didVideoPublishStateChange:(NSString *_Nonnull)channel oldState:(YxtStreamPublishState)oldState newState:(YxtStreamPublishState)newState elapseSinceLastState:(NSInteger)elapseSinceLastState;
+
+/// 屏幕录制状态改变 0:未共享  1:共享中
+- (void)rtcEngine:(YxtRtcEngine * _Nonnull)engine localScreenShareStateChangedOfState:(YxtCaptureState)state;
 
 ///  远端用户/主播加入回调
 ///  通信场景下: 远端用户加入
@@ -102,6 +111,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark -- 语音识别
 - (void)onAsrResult:(NSDictionary *)asrResult;
+
+#pragma mark -- 日志回调
+/// 日志回调
+/// @param engine YxtRtcEngine实例
+/// @param log 日志内容
+/// @param level 日志级别
+- (void)rtcEngine:(YxtRtcEngine *_Nonnull)engine onLog:(NSString *)log level:(YxtRtcLogLevel)level;
+
+
 
 @end
 

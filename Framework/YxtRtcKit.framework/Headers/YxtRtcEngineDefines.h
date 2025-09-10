@@ -102,6 +102,7 @@ typedef NS_ENUM(NSInteger, YxtErrorCode) {
     YxtErrSubscriberFail = -3304,
     YxtErrSwitchRoleFail = -3305,
     YxtErrRecordFail = -3306,
+    YxtErrControlAsrFail = -3307,
 };
 
 typedef NS_ENUM(NSUInteger, YxtStreamPublishState ) {
@@ -120,6 +121,15 @@ typedef NS_ENUM(NSUInteger, YxtRecordState ) {
     YxtRecordStatePause = 2,
 };
 
+typedef NS_ENUM(NSUInteger, YxtCaptureState ) {
+    // 屏幕共享 进程开启
+    YxtLocalVideoStreamCaptureStarted = 0,
+    // 屏幕共享 进程停止
+    YxtLocalVideoStreamCaptureStoped = 1,
+    // 屏幕共享 进程异常
+    YxtLocalVideoStreamCaptureDisconnected = 2,
+};
+
 typedef NS_ENUM(NSUInteger, YxtAudioRoute ) {
     YxtAudioRouteSpeakerphone = 0,
     YxtAudioRouteEarpiece = 1,
@@ -135,7 +145,7 @@ typedef NS_ENUM(NSInteger, YxtVideoRotation) {
     YxtVideoRotation_0 = 0,
     YxtVideoRotation_90 = 90,
     YxtVideoRotation_180 = 180,
-    YxtCVideoRotation_270 = 270,
+    YxtVideoRotation_270 = 270,
 };
 
 /**重力感应开关*/

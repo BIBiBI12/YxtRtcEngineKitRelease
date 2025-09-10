@@ -13,6 +13,7 @@
 #import "YxtBeautyManager.h"
 #import "YxtRtcAVConfig.h"
 #import "YxtVirtualBackgroundSource.h"
+#import "YxtAsrParam.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -32,6 +33,10 @@ NS_ASSUME_NONNULL_BEGIN
 /// 加入房间
 /// @param config 房间配置
 - (int)joinRoomByConfig:(YxtRtcRoomConfig *)config;
+
+- (int)joinMeetingWithToken:(NSString *)token
+                       name:(NSString *)name
+                 meetingKey:(NSString *)meetingKey;
 
 /// 离开房间
 - (int)leaveRoom;
@@ -111,8 +116,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (YxtApiCallCode)startPublish;
 
 /// 设置视频编码器输出的画面方向
-/// 该设置不影响本地画面的预览方向，但会影响房间中其他用户所观看到（以及云端录制文件）的画面方向。 当用户将手机或 Pad 上下颠倒时，由于摄像头的采集方向没有变，所以房间中其他用户所看到的画面会变成上下颠倒的， 在这种情况下，您可以通过调用该接口将 SDK 编码出的画面方向旋转180度，如此一来，房间中其他用户所看到的画面可保持正常的方向。
-/// @param rotation    目前支持0和180两个旋转角度，默认值：TRTCVideoRotation_0，即不旋转。
+/// 该设置影响本地画面的预览方向,同时会影响房间中其他用户所观看到（以及云端录制文件）的画面方向。 当用户将手机或 Pad 上下颠倒时，由于摄像头的采集方向没有变，所以房间中其他用户所看到的画面会变成上下颠倒的， 在这种情况下，您可以通过调用该接口将 SDK 编码出的画面方向旋转180度，如此一来，房间中其他用户所看到的画面可保持正常的方向。
+/// @param rotation    目前支持4个旋转角度，默认值：YxtVideoRotation_0，即不旋转。
 - (BOOL)setVideoEncoderRotation:(YxtVideoRotation)rotation;
 
 //设置重力感应的适配模式(1.0.11)
@@ -121,6 +126,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 停止推流
 - (void)stopPublish;
+
+#pragma mark -- ShareScreen
+/// 开启屏幕共享
+- (void)startShareScreen;
+
+/// 结束屏幕共享
+- (void)stopScreenShare;
 
 #pragma mark -- Channel
 /// 获取查询channel内人员信息
@@ -135,6 +147,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// 发送消息给房间单个人员
 - (void)send:(NSString*)message
         to:(NSString*)uid;
+
 #pragma mark -- VirtualBackground
 /// 开启/关闭虚拟背景
 /// 返回值
@@ -177,6 +190,10 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param asrResultType  识别模式
 - (void)startAsr:(YxtAsrResultType)asrResultType;
 
+/// 开启语音识别
+/// @asrParam  更细节的控制识别逻辑
+- (void)startAsrWithParam:(YxtAsrParam *)asrParam;
+
 /// 关闭语音识别
 - (void)stopAsr;
 
@@ -190,17 +207,21 @@ NS_ASSUME_NONNULL_BEGIN
 /// 获取美颜管理
 - (YxtBeautyManager *)getBeautyManager;
 
-/// 启动文件日志   默认关闭状态
-/// 最多同时存在10个日志，超过10个会删除最早的日志
-/// 单个日志最大为10m，日志超过10m后，会被压缩成zip文件，并创建新的log文件继续写入
-/// @param path 存放日志的文件夹路径 ，path不能为空，否则无法写入日志
-+ (void)startLogWithPath:(NSString *)path;
-
-/// 写入日志信息
+///// 启动文件日志   默认关闭状态
+///// 最多同时存在10个日志，超过10个会删除最早的日志
+///// 单个日志最大为10m，日志超过10m后，会被压缩成zip文件，并创建新的log文件继续写入
+///// @param path 存放日志的文件夹路径 ，path不能为空，否则无法写入日志
+//- (void)startLogWithPath:(NSString *)path;
+//
+///// 写入日志信息
 + (void)log:(NSString *)log level:(YxtRtcLogLevel)level;
+//
+///// 获取日志路径数组 (ps:查看最新的日志，可以取array.lastObject,最早的日志越靠前)
+//+ (NSArray <NSURL *>*)getlogFiles:(NSString *)logPath;
 
-/// 获取日志路径数组 (ps:查看最新的日志，可以取array.lastObject,最早的日志越靠前)
-+ (NSArray <NSURL *>*)getlogFiles:(NSString *)logPath;
+
+/// 上传所有日志文件夹到服务器
+- (void)uploadAllLogIfNeed;
 
 @end
 
