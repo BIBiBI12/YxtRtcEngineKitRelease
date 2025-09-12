@@ -21,10 +21,6 @@ NS_ASSUME_NONNULL_BEGIN
 //错误事件，表示 SDK 抛出的不可恢复的错误，比如进入房间失败或设备开启失败等
 - (void)rtcEngine:(YxtRtcEngine *_Nonnull)engine didOccurError:(YxtErrorCode)errorCode extInfo:(NSDictionary *)extInfo;
 - (void)rtcEngine:(YxtRtcEngine *_Nonnull)engine didOccurWarning:(YxtWarningCode)warningCode extInfo:(NSDictionary *)extInfo;
-/// 是否开启文件日志
-- (BOOL)enableFileLog;
-/// 是否允许上传文件日志
-- (BOOL)enableUploadFileLog;
 
 @optional
 
@@ -118,7 +114,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param log 日志内容
 /// @param level 日志级别
 - (void)rtcEngine:(YxtRtcEngine *_Nonnull)engine onLog:(NSString *)log level:(YxtRtcLogLevel)level;
-
 
 
 @end

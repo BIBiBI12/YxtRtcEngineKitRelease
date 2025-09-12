@@ -17,8 +17,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/// <#Description#>
 @interface YxtRtcEngine : NSObject
+
 
 #pragma mark  Core
 /// 创建 YxtRtcEngine 实例
@@ -26,6 +26,11 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param delegate YxtRtcEngineDelegate
 + (instancetype _Nonnull)sharedEngineWithAppId:(NSString *_Nonnull)appId
         delegate:(id<YxtRtcEngineDelegate> _Nullable)delegate;
+
+/// 是否允许开启日志文件
+/// true： 将在离开chanel时，sdk自动上传日志
+/// 不设置 - 默认开启日志
++ (void)enableFileLog:(BOOL)enable;
 
 /// 销毁 YxtRtcEngine 实例
 + (void)destroy;
@@ -207,21 +212,16 @@ NS_ASSUME_NONNULL_BEGIN
 /// 获取美颜管理
 - (YxtBeautyManager *)getBeautyManager;
 
-///// 启动文件日志   默认关闭状态
-///// 最多同时存在10个日志，超过10个会删除最早的日志
-///// 单个日志最大为10m，日志超过10m后，会被压缩成zip文件，并创建新的log文件继续写入
-///// @param path 存放日志的文件夹路径 ，path不能为空，否则无法写入日志
-//- (void)startLogWithPath:(NSString *)path;
-//
 ///// 写入日志信息
 + (void)log:(NSString *)log level:(YxtRtcLogLevel)level;
-//
+
+
 ///// 获取日志路径数组 (ps:查看最新的日志，可以取array.lastObject,最早的日志越靠前)
-//+ (NSArray <NSURL *>*)getlogFiles:(NSString *)logPath;
++ (NSArray <NSURL *>*)getlogFiles;
 
 
 /// 上传所有日志文件夹到服务器
-- (void)uploadAllLogIfNeed;
++ (void)uploadAllLogIfNeed;
 
 @end
 
