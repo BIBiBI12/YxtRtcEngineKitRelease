@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.license = {"type"=>"MIT", "file"=>"LICENSE"}
   s.authors = {"YxtRtcEngineKit"=>"me_zqx@163.com"}
   s.homepage = "https://me_zqx.coding.net/p/yunxuetang/d/YxtRtcKit/git/tree/master/LICENSE"
-  s.description = ""
+  s.description = "TODO: add a long des"
  
   s.xcconfig = {"VALID_ARCHS"=>"arm64"}
   
