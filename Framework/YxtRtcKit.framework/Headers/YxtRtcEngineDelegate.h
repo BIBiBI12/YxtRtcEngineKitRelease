@@ -70,6 +70,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// 远端视频尺寸变化
 - (void)rtcEngine:(YxtRtcEngine *_Nonnull)engine onVideoSizeChange:(NSString *)uid width:(int)width height:(int)height;
 
+/// 语音激励
+- (void)rtcEngine:(YxtRtcEngine *_Nonnull)engine streamDidChangeActiveInput:(NSString *)streamId;
+
 #pragma mark -- 与云端连接情况的事件回调
 /// SDK 与云端的连接已经断开
 - (void)rtcEngineOnConnectionLost:(YxtRtcEngine *_Nonnull)engine;
@@ -79,6 +82,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// SDK 与云端的连接已经恢复
 - (void)rtcEngineOnConnectionRecovery:(YxtRtcEngine *_Nonnull)engine;
+
+/// peerConnection 异常
+- (void)rtcEngineOnPeerConnectionError:(YxtRtcEngine *_Nonnull)engine error:(NSError *)error;
+
+/// 尝试恢复peerConnection
+- (void)rtcEngineOnPeerConnectionStatusChange:(YxtRtcEngine *_Nonnull)engine status:(YxtPCRecoveryStatus)status;
 
 #pragma mark -- 音量信息
 /// soundLevel 远端流音量更新回调

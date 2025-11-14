@@ -154,6 +154,15 @@ typedef NS_ENUM(NSInteger, YxtGSensorMode) {
     YxtGSensorMode_UIAutoLayout = 1,
 };
 
+/** PeerConnection恢复状态 */
+typedef NS_ENUM(NSInteger,  YxtPCRecoveryStatus) {
+    YxtPCRecoveryStatusStart,      // 开始恢复
+    YxtPCRecoveryStatusInProgress, // 恢复中
+    YxtPCRecoveryStatusSuccess,    // 恢复成功
+    YxtPCRecoveryStatusFailed,     // 恢复失败
+    YxtPCRecoveryStatusNotNeeded   // 不需要恢复
+};
+
 /** 日志级别 */
 typedef enum {
     YxtRtcLogLevel_debug = 2,

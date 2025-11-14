@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name = "YxtRtcEngineKit"
-  s.version = "1.2.0"
+  s.version = "1.3.0"
   s.summary = "音视频SDK"
   s.license = {"type"=>"MIT", "file"=>"LICENSE"}
   s.authors = {"YxtRtcEngineKit"=>"me_zqx@163.com"}

@@ -120,6 +120,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// 开始推流
 - (YxtApiCallCode)startPublish;
 
+/// 重新推流
+- (YxtApiCallCode)restorePublish;
+
 /// 设置视频编码器输出的画面方向
 /// 该设置影响本地画面的预览方向,同时会影响房间中其他用户所观看到（以及云端录制文件）的画面方向。 当用户将手机或 Pad 上下颠倒时，由于摄像头的采集方向没有变，所以房间中其他用户所看到的画面会变成上下颠倒的， 在这种情况下，您可以通过调用该接口将 SDK 编码出的画面方向旋转180度，如此一来，房间中其他用户所看到的画面可保持正常的方向。
 /// @param rotation    目前支持4个旋转角度，默认值：YxtVideoRotation_0，即不旋转。

@@ -34,6 +34,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(nonatomic, assign) BOOL isfluency; //是否对识别文本进行顺滑(去除语气词,重复说等)
 
+@property(nonatomic, copy) NSString *phraseId; // 热词id
+
 @end
 
 NS_ASSUME_NONNULL_END
