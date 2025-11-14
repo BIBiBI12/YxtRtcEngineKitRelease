@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   
   s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  s.source           = { :git => 'https://e.coding.net/me_zqx/yunxuetang/YxtRtcEngineRelease.git', :tag => "#{s.version}" }
+  s.source           = { :git => 'https://gitee.com/me_zqx/yxt-rtc-engine-kit-release.git', :tag => "#{s.version}" }
   s.ios.deployment_target    = '10.0'
   s.default_subspec = 'Core'
 
