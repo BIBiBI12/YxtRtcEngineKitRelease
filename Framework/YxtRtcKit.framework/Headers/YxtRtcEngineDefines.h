@@ -103,6 +103,8 @@ typedef NS_ENUM(NSInteger, YxtErrorCode) {
     YxtErrSwitchRoleFail = -3305,
     YxtErrRecordFail = -3306,
     YxtErrControlAsrFail = -3307,
+    YxtCamStartupFail = -3308,  // 相机启动失败
+    YxtOvershotMaxRetryCount = -3309,  // 超出最大尝试恢复次数
 };
 
 typedef NS_ENUM(NSUInteger, YxtStreamPublishState ) {
@@ -156,11 +158,11 @@ typedef NS_ENUM(NSInteger, YxtGSensorMode) {
 
 /** PeerConnection恢复状态 */
 typedef NS_ENUM(NSInteger,  YxtPCRecoveryStatus) {
-    YxtPCRecoveryStatusStart,      // 开始恢复
-    YxtPCRecoveryStatusInProgress, // 恢复中
-    YxtPCRecoveryStatusSuccess,    // 恢复成功
-    YxtPCRecoveryStatusFailed,     // 恢复失败
-    YxtPCRecoveryStatusNotNeeded   // 不需要恢复
+    YxtPCRecoveryStatusNotNeeded = 0,   // 不需要恢复
+    YxtPCRecoveryStatusFailed = -1,     // 恢复失败
+    YxtPCRecoveryStatusStart = 1,       // 开始恢复
+    YxtPCRecoveryStatusInProgress = 2, // 恢复中
+    YxtPCRecoveryStatusSuccess = 3,    // 恢复成功
 };
 
 /** 日志级别 */
