@@ -105,6 +105,7 @@ typedef NS_ENUM(NSInteger, YxtErrorCode) {
     YxtErrControlAsrFail = -3307,
     YxtCamStartupFail = -3308,  // 相机启动失败
     YxtOvershotMaxRetryCount = -3309,  // 超出最大尝试恢复次数
+    YxtErrPublishFail = -3310,  // 推流失败
 };
 
 typedef NS_ENUM(NSUInteger, YxtStreamPublishState ) {
