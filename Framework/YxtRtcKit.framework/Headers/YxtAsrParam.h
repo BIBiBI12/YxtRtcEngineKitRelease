@@ -26,6 +26,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(nonatomic, assign) BOOL semanticSentenceDetection; //语义断句
 
+/*
+ tingwu文档： 语音断句检测阈值。静音时长超过该阈值会被认为断句，合法参数范围 200~2000 毫秒，默认值800 毫
+ 秒
+ */
 @property(nonatomic, assign) int maxSentenceSilence; //200～6000, 静音断句阈值
 
 @property(nonatomic, assign) BOOL enableWords; //词语模式
