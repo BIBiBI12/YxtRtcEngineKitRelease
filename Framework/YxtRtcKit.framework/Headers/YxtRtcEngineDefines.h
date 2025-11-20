@@ -197,9 +197,9 @@ typedef enum {
 
 typedef enum {
     // 只要最后识别结果，省略中间过程
-    YxtOnlyResult = 0,
+    YxtOnlyResult = 1,
     // 需要中间识别过程
-    YxtIntermediateResult = 1,
+    YxtIntermediateResult = 7,
 } YxtAsrResultType;
 
 @interface YxtRtcRoomConfig : NSObject

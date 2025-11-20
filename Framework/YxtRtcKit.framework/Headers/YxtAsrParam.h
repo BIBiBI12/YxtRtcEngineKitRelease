@@ -6,13 +6,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "YxtRtcEngineDefines.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 
 @interface YxtAsrParam : NSObject
 
-@property(nonatomic, assign, readonly) BOOL status; 
+@property(nonatomic, assign, readonly) YxtAsrResultType status;
 
 @property(nonatomic, assign) BOOL tingwu; //听悟多路模式  默认 NO
 
