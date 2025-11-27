@@ -78,6 +78,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark Video
 
+- (void)enableVideo:(BOOL)enable;
+
+/// 禁止用Vidieo track
 - (int)enableLocalVideo:(BOOL)enabled;
 
 /// 暂停/恢复 推本地视频流
